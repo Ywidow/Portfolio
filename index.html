@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Thomy</title>
+
+    <!--Link FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!--Links CSSes de cada Section-->
+    <link rel="stylesheet" href="./SectionsStylesSheets/HomeSection.css" />
+    <link rel="stylesheet" href="./SectionsStylesSheets/AboutSection.css" />
+    <link rel="stylesheet" href="./SectionsStylesSheets/PortfolioSection.css" />
+    <link rel="stylesheet" href="./SectionsStylesSheets/SkillsSection.css" />
+    <link
+      rel="stylesheet"
+      href="./SectionsStylesSheets/ExperienceSection.css"
+    />
+    <link rel="stylesheet" href="./SectionsStylesSheets/EducationSection.css" />
+    <link rel="stylesheet" href="./SectionsStylesSheets/ContactSection.css" />
+
+    <!--Link CSS geral-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Link Google Fonts-->
+    <!--Fontes: Roboto(300, 700, 900), Open Sans(400)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Notification Form-->
+    <div class="notification-container">
+      <p class="notification-container__text">Formulário enviado com sucesso!</p>
+    </div>
+
+    <div class="opacity-container">
+      
+    </div>
+
+    <!--Section Home-->
+    <section class="home-section" id="Home">
+      <figure class="home-section__figure">
+        <img
+          src="./images/ragnar-capa.jpg"
+          alt="ragnarImage"
+          class="home-section__image"
+        />
+      </figure>
+
+      <div class="home-section__presentation-container">
+        <header class="presentation-container__header">
+          <nav class="presentation-container__nav-bar" id="NavBar">
+            <ul class="nav-bar__buttons-container-list">
+              <li>
+                <ul class="nav-bar__buttons-list">
+                  <li>
+                    <a href="#Home" class="buttons-list__anchor">
+                      <button class="buttons-list__button" id="botaoHome">
+                        <i
+                          class="fa-solid fa-house buttons-list__icon"
+                          style="color: #ffffff"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >HOME</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#Sobre" class="buttons-list__anchor">
+                      <button class="buttons-list__button" id="botaoSobre">
+                        <i
+                          class="fa-solid fa-user buttons-list__icon"
+                          style="color: #ffffff"
+                          id="testeI"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >SOBRE</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#Portfólio" class="buttons-list__anchor">
+                      <button class="buttons-list__button" id="botaoPortfolio">
+                        <i
+                          class="fa-solid fa-briefcase buttons-list__icon"
+                          style="color: #ffffff"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >PORTFÓLIO</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#Skills" class="buttons-list__anchor">
+                      <button class="buttons-list__button" id="botaoSkills">
+                        <i
+                          class="fa-solid fa-brain buttons-list__icon"
+                          style="color: #ffffff"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >SKILLS</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#Experiência" class="buttons-list__anchor">
+                      <button
+                        class="buttons-list__button"
+                        id="botaoExperiencia"
+                      >
+                        <i
+                          class="fa-solid fa-user-tie buttons-list__icon"
+                          style="color: #ffffff"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >EXPERIÊNCIA</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#Educação" class="buttons-list__anchor">
+                      <button class="buttons-list__button" id="botaoEducacao">
+                        <i
+                          class="fa-solid fa-user-graduate buttons-list__icon"
+                          style="color: #ffffff"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >EDUCAÇÃO</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#Contato" class="buttons-list__anchor">
+                      <button class="buttons-list__button" id="botaoContato">
+                        <i
+                          class="fa-solid fa-envelope buttons-list__icon"
+                          style="color: #ffffff"
+                        ></i>
+
+                        <span class="buttons-list__text" id="testandoodisplay"
+                          >CONTATO</span
+                        >
+                      </button>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <button
+                  class="buttons-container-list__hamburguer-button"
+                  onclick="HamburguerClick(this)"
+                >
+                  <i
+                    class="fa-sharp fa-solid fa-bars fa-2xl hamburguer-button__icon"
+                    style="color: #fbfcfe"
+                  ></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="presentation-container__text-container">
+          <main class="presentation-container__main">
+            <div>
+              <p class="main__text--hello-text--small">OLÁ!</p>
+
+              <div class="main__informations-container">
+                <div class="informations-container__text-container">
+                  <p class="text-container__text">EU SOU</p>
+
+                  <h1 class="text-container__text--name--bolder">
+                    RAGNAR LOTHBROK
+                  </h1>
+                </div>
+
+                <p class="information-container__text">
+                  TI'm a Tunisian based web designer & front‑end developer
+                  focused on crafting clean & user‑friendly experiences, I am
+                  passionate about building excellent software that improves the
+                  lives of those around me.
+                </p>
+              </div>
+            </div>
+            
+            <div class="disabled">
+              <p class="information-container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus velit eligendi voluptatem cumque ea?</p>
+              <p class="information-container__text">Lorem ipsum dolor sit.</p>
+              <p class="information-container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis dolor non iste sed quas ex nihil ratione blanditiis beatae maxime!</p>
+              <p class="information-container__text">Lorem ipsum dolor sit amet.</p>
+            </div>
+
+            <span>
+              <button class="section__button button-more">MAIS</button>
+            </span>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <!--Section Sobre-->
+    <section class="about-section" id="Sobre">
+      <header class="section-header">
+        <h2 class="section-header__text--size--big section-header__text">|</h2>
+
+        <div class="section-header__text-container">
+          <h2 class="section-header__text">&nbsp;SOBRE</h2>
+        </div>
+      </header>
+
+      <div class="about-section__container">
+        <div class="about-section__info-container">
+          <div class="info-container__informations-area">
+            <ul class="informations-area__list">
+              <li class="informations-area__list-item">
+                <p class="informations-area__text--size--small">NOME</p>
+                <p class="informations-area__text">RAGNAR LOTHBROK</p>
+              </li>
+
+              <li class="informations-area__list-item">
+                <p class="informations-area__text--size--small">IDADE</p>
+                <p class="informations-area__text">33 ANOS</p>
+              </li>
+
+              <li class="informations-area__list-item">
+                <p class="informations-area__text--size--small">PROFISSÃO</p>
+                <p class="informations-area__text">DESENVOLVEDOR FULLSTACK</p>
+              </li>
+
+              <li class="informations-area__list-item">
+                <p class="informations-area__text--size--small">NATURALIDADE</p>
+                <p class="informations-area__text">ITAJAÍ/SC</p>
+              </li>
+
+              <li class="informations-area__list-item">
+                <p class="informations-area__text--size--small">
+                  NACIONALIDADE
+                </p>
+                <p class="informations-area__text">BRASILEIRO</p>
+              </li>
+
+              <li class="informations-area__list-item">
+                <p class="informations-area__text--size--small">GITHUB</p>
+                <p class="informations-area__text">WWW.GITHUB.COM/RAGNAR</p>
+              </li>
+            </ul>
+
+            <span>
+              <button class="informations-area__button">CURRÍCULO</button>
+            </span>
+          </div>
+
+          <figure class="info-container__figure">
+            <img
+              src="./images/ragnar-sobre.jpg"
+              alt=""
+              class="second-part__image info-container__image"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!--Section Portfólio-->
+    <section class="portfolio-section" id="Portfólio">
+      <header class="section-header">
+        <h2 class="section-header__text--size--big section-header__text">|</h2>
+
+        <div class="section-header__text-container">
+          <h2 class="section-header__text">&nbsp;PORTFÓLIO</h2>
+        </div>
+      </header>
+
+      <div class="portfolio-section__container">
+        <ul class="portfolio-section__buttons-list">
+          <li>
+            <button
+              class="portfolio-section__button portfolio-section__button--color-size--orange-big"
+              onclick="Click(this)"
+            >
+              <i
+                class="portfolio-section__icon fa-solid fa-code"
+                style="color: #ffffff"
+              ></i>
+              <span class="portfolio-section__text--display--activet"
+                >WEBSITES</span
+              >
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="portfolio-section__button teste-palette__button"
+              onclick="Click(this)"
+            >
+              <i
+                class="portfolio-section__icon fa-solid fa-palette"
+                style="color: #ffffff"
+              ></i>
+              <span class="portfolio-section__text">PALAVRA1</span>
+            </button>
+          </li>
+
+          <li>
+            <button
+              class="portfolio-section__button teste-camera__button"
+              onclick="Click(this)"
+            >
+              <i
+                class="portfolio-section__icon fa-solid fa-camera"
+                style="color: #ffffff"
+              ></i>
+              <span class="portfolio-section__text">PALAVRA2</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="portfolio-section__images-list">
+          <!--ListaItem com Semântica-->
+          <li>
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-3.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__first-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-2.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__second-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-7.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__third-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-6.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fourth-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-4.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fifth-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-1.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__sixth-image"
+              />
+            </figure>
+          </li>
+
+
+          <li class="disabled">
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-3.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__first-image"
+              />
+            </figure>
+          </li>
+
+          <li class="disabled">
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-2.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__second-image"
+              />
+            </figure>
+          </li>
+
+          <li class="disabled">
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-7.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__third-image"
+              />
+            </figure>
+          </li>
+
+          <li class="disabled">
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-6.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fourth-image"
+              />
+            </figure>
+          </li>
+
+          <li class="disabled">
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-4.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fifth-image"
+              />
+            </figure>
+          </li>
+
+          <li class="disabled">
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-1.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__sixth-image"
+              />
+            </figure>
+          </li>
+        </ul>
+
+        <ul class="portfolio-teste__image teste__image-list--palette-button">
+          <!--ListaItem com Semântica-->
+          <li>
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-2.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__second-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-3.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__first-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-7.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__third-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-6.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fourth-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-4.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fifth-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-1.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__sixth-image"
+              />
+            </figure>
+          </li>
+        </ul>
+
+        <ul class="portfolio-teste__image teste__image-list--palette-button">
+          <!--ListaItem com Semântica-->
+          <li>
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-2.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__second-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <!--Image com Semântica-->
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-3.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__first-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-7.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__third-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-6.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fourth-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-1.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__sixth-image"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                onmouseenter="EntradaDoMouse(this.parentNode, this)"
+                onmouseout="SaidaDoMouse(this.parentNode, this)"
+                src="./images/portfolio-website-4.jpg"
+                alt="webSitePicture"
+                class="portfolio-section__image portfolio-section__fifth-image"
+              />
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <button class="section__button button-more">MAIS</button>
+      </div>
+    </section>
+
+    <!--Section Skills-->
+    <section class="skills-section" id="Skills">
+      <header class="section-header">
+        <h2 class="section-header__text--size--big section-header__text">|</h2>
+
+        <div class="section-header__text-container">
+          <h2 class="section-header__text">&nbsp;SKILLS</h2>
+        </div>
+      </header>
+
+      <!--Lista com Semântica-->
+      <ul class="skills-section__skills-container">
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-html-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/html.png"
+              alt="htmlImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">HTML</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-css-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/css.png"
+              alt="cssImage"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">CSS</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-csharp-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/csharp.png"
+              alt="c#Image"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">C#</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li class="skills-container__item skills-container__skill-js-container">
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/javascript.png"
+              alt="JSImage"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">JavaScript</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-dotnet-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/netcore.png"
+              alt="DotNetImage"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">.Net Core</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star-half fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li class="skills-container__item skills-container__skill-ts-container">
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/ts.png"
+              alt="TSImage"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">TypeScript</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star-half fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-react-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/react.png"
+              alt="ReactImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">React</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star-half fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-vscode-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/vscode.png"
+              alt="VsCodeImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">VsCode</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star-half fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-git-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/git.png"
+              alt="GitImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">Git</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star-half fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-postgresql-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/postgresql.png"
+              alt="GitImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">PostgreSQL</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-webpack-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/webpack.png"
+              alt="WebPackImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">WebPack</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-nginx-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/nginx.png"
+              alt="NginxImage"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">Nginx</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-ubuntu-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/ubuntu.png"
+              alt="UbuntuImage"
+              class="skills-container__image"
+            />
+            <figcaption class="skills-container__text">Ubuntu</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-aws-container"
+        >
+          <!--Figura com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/aws.png"
+              alt="AWSImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">AWS</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-photoshop-container"
+        >
+          <!--Imagem com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/photoshop.png"
+              alt="PhotoShopImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">PhotoShop</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+
+        <!--ListaItem com Semântica-->
+        <li
+          class="skills-container__item skills-container__skill-figma-container"
+        >
+          <!--Imagem com Semântica-->
+          <figure class="skills-container__figure">
+            <img
+              src="./images/figma.png"
+              alt="FigmaImage"
+              class="skills-container__image"
+            />
+
+            <figcaption class="skills-container__text">Figma</figcaption>
+          </figure>
+
+          <div class="skills-container__stars-container">
+            <i class="fa-solid fa-star fa-2xs" style="color: #f5b63f"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!--Section Experiência-->
+    <section class="experience-section" id="Experiência">
+      <div class="experience-section__first-half-container">
+        <header class="section-header">
+          <h2 class="section-header__text--size--big section-header__text">
+            |
+          </h2>
+
+          <div class="section-header__text-container">
+            <h2 class="section-header__text">&nbsp;EXPERIÊNCIA</h2>
+          </div>
+        </header>
+
+        <!--Lista com Semântica-->
+        <ul class="experience-section__list">
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2012 - 2014</time>
+            </div>
+
+            <h3 class="experience-section__text">GOOGLE</h3>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Estágio na Google atuando na equipe de desenvolvimento de
+                ferramentas para o ADS.
+              </p>
+            </div>
+          </li>
+
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2014 - 2018</time>
+            </div>
+
+            <h1 class="experience-section__text">BOOKING</h1>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Cargo de desenvolvedor junior na equipe de desenvolvimento back
+                end.
+              </p>
+            </div>
+          </li>
+
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2018 - 2021</time>
+            </div>
+
+            <h1 class="experience-section__text">FACEBOOK</h1>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Cargo de desenvolvedor pleno na equipe de criação da biblioteca
+                React.
+              </p>
+            </div>
+          </li>
+
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2021 - Trabalhando</time>
+            </div>
+
+            <h1 class="experience-section__text">TWITTER</h1>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Cargo de desenvolvedor sênior na equipe de criação do aplicativo
+                X.
+              </p>
+            </div>
+          </li>
+          
+
+          <li class="experience-section__item disabled">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2012 - 2014</time>
+            </div>
+
+            <h3 class="experience-section__text">GOOGLE</h3>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Estágio na Google atuando na equipe de desenvolvimento de
+                ferramentas para o ADS.
+              </p>
+            </div>
+          </li>
+
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item disabled">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2014 - 2018</time>
+            </div>
+
+            <h1 class="experience-section__text">BOOKING</h1>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Cargo de desenvolvedor junior na equipe de desenvolvimento back
+                end.
+              </p>
+            </div>
+          </li>
+
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item disabled">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2018 - 2021</time>
+            </div>
+
+            <h1 class="experience-section__text">FACEBOOK</h1>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Cargo de desenvolvedor pleno na equipe de criação da biblioteca
+                React.
+              </p>
+            </div>
+          </li>
+
+          <!--ListaItem com Semântica-->
+          <li class="experience-section__item disabled">
+            <div class="section__year-container">
+              <i
+                class="fa-solid fa-calendar-days year-container__icone"
+                style="color: #f5b63f"
+              ></i>
+
+              <!--Tempo com Semântica-->
+              <time class="year-container__time">2021 - Trabalhando</time>
+            </div>
+
+            <h1 class="experience-section__text">TWITTER</h1>
+
+            <div class="experience-section__text-container">
+              <p class="experience-section__text--size--small">
+                Cargo de desenvolvedor sênior na equipe de criação do aplicativo
+                X.
+              </p>
+            </div>
+          </li>
+        </ul>
+        
+        
+        <span>
+          <!--Button com Semântica-->
+          <button class="section__button button-more">MAIS</button>
+        </span>
+      </div>
+
+      <div class="experience-section__second-half-container">
+        <div class="experience-section__boxes-container">
+          <div class="boxes-container__boxes boxes-container__box1">
+            <p class="boxes__text--color-size--yellow-big">9</p>
+            <p class="boxes__text">ANOS DE EXPERIÊNCIA</p>
+          </div>
+
+          <div class="boxes-container__boxes boxes-container__box2">
+            <p class="boxes__text--color-size--yellow-big">16</p>
+            <p class="boxes__text">PROJETOS INDIVIDUAIS</p>
+          </div>
+
+          <div class="boxes-container__boxes boxes-container__box3">
+            <p class="boxes__text--color-size--yellow-big">72</p>
+            <p class="boxes__text">PROJETOS EM EQUIPE</p>
+          </div>
+
+          <div class="boxes-container__boxes boxes-container__box4">
+            <p class="boxes__text--color-size--yellow-big">87</p>
+            <p class="boxes__text">CURSOS DE ESPECIALIZAÇÃO</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section Educação-->
+    <section class="education-section" id="Educação">
+      <header class="section-header">
+        <h2 class="section-header__text--size--big section-header__text">|</h2>
+
+        <div class="section-header__text-container">
+          <h2 class="section-header__text">&nbsp;EDUCAÇÃO</h2>
+        </div>
+      </header>
+
+      <div class="education-section__container">
+        <div class="education-section__topics-container">
+          <div class="topics-container__topic-box">
+            <div class="topic-box__tittle-container">
+              <h3 class="tittle-container__text">
+                BACHARELADO E PÓS-GRADUAÇÃO
+              </h3>
+            </div>
+
+            <ul class="topic-box__list">
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2012 - 2016</time>
+                </div>
+
+                <span
+                  class="topic-box__text-container topic-box__text-container"
+                >
+                  <b class="topic-box__text">CIÊNCIA DA COMPUTAÇÃO</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Bracharelado em Ciência da Computação pela Univali
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2012 - 2016</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">BIG DATA</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Pós graduado em Big Data pela UFSC
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2012 - 2016</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">COMPUTAÇÃO APLICADA</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Mestrado em Computação Aplicada pela UFSP
+                    </p>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="topics-container__topic-box">
+            <div class="topic-box__tittle-container">
+              <h3 class="tittle-container__text">CURSO DE ESPECIALIZAÇÃO</h3>
+            </div>
+
+            <ul class="topic-box__list">
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2019 - 2020</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">FRONTEND</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de formação FrontEnd ministrado por Jackson Camara.
+                      Total de 500 horas concluídas.
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2021- 2022</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">BACKEND</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de formação BackEnd ministrado por Jackson Camara.
+                      Total de 500 horas concluídas.
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2023-ANDAMENTO</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">FullStack</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de formação FullStack ministrado por Jackson Camara.
+                      Total de 500 horas concluídas.
+                    </p>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="topics-container__topic-box">
+            <div class="topic-box__tittle-container">
+              <h3 class="tittle-container__text">CURSO DE ESPECIALIZAÇÃO</h3>
+            </div>
+
+            <ul class="topic-box__list">
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2017 - 2019</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">INGLÊS</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de Inglês na Univali Idiomas. Níveis a1, a2, b1
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2020 - 2021</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">INGLÊS</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de Inglês na Wizard. Níveis b2, c1
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2021 - Andamento</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">INGLÊS</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de Inglês particular. Nível c2
+                    </p>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="education-section__topics-container disabled">
+          <div class="topics-container__topic-box">
+            <div class="topic-box__tittle-container">
+              <h3 class="tittle-container__text">
+                BACHARELADO E PÓS-GRADUAÇÃO
+              </h3>
+            </div>
+
+            <ul class="topic-box__list">
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2012 - 2016</time>
+                </div>
+
+                <span
+                  class="topic-box__text-container topic-box__text-container"
+                >
+                  <b class="topic-box__text">CIÊNCIA DA COMPUTAÇÃO</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Bracharelado em Ciência da Computação pela Univali
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2012 - 2016</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">BIG DATA</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Pós graduado em Big Data pela UFSC
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2012 - 2016</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">COMPUTAÇÃO APLICADA</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Mestrado em Computação Aplicada pela UFSP
+                    </p>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="topics-container__topic-box">
+            <div class="topic-box__tittle-container">
+              <h3 class="tittle-container__text">CURSO DE ESPECIALIZAÇÃO</h3>
+            </div>
+
+            <ul class="topic-box__list">
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2019 - 2020</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">FRONTEND</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de formação FrontEnd ministrado por Jackson Camara.
+                      Total de 500 horas concluídas.
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2021- 2022</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">BACKEND</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de formação BackEnd ministrado por Jackson Camara.
+                      Total de 500 horas concluídas.
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2023-ANDAMENTO</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">FullStack</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de formação FullStack ministrado por Jackson Camara.
+                      Total de 500 horas concluídas.
+                    </p>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="topics-container__topic-box">
+            <div class="topic-box__tittle-container">
+              <h3 class="tittle-container__text">CURSO DE ESPECIALIZAÇÃO</h3>
+            </div>
+
+            <ul class="topic-box__list">
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2017 - 2019</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">INGLÊS</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de Inglês na Univali Idiomas. Níveis a1, a2, b1
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2020 - 2021</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">INGLÊS</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de Inglês na Wizard. Níveis b2, c1
+                    </p>
+                  </span>
+                </span>
+              </li>
+
+              <li class="topic-box__list-item">
+                <div class="section__year-container">
+                  <i
+                    class="fa-solid fa-calendar-days year-container__icone"
+                    style="color: #f5b63f"
+                  ></i>
+
+                  <!--Tempo com Semântica-->
+                  <time class="year-container__time">2021 - Andamento</time>
+                </div>
+                <span class="topic-box__text-container">
+                  <b class="topic-box__text">INGLÊS</b>
+
+                  <span class="topic-box__description-text-container">
+                    <p class="topic-box__text--size--small">
+                      Curso de Inglês particular. Nível c2
+                    </p>
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="education-section__button-container">
+          <button class="section__button button-more">MAIS</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Section Contato-->
+    <section class="contact-section" id="Contato">
+      <header class="section-header">
+        <h2 class="section-header__text--size--big section-header__text">|</h2>
+
+        <div class="section-header__text-container">
+          <h2 class="section-header__text">&nbsp;CONTATO</h2>
+        </div>
+      </header>
+
+      <div class="contact-section__means-of-contact-container">
+        <div class="means-of-contact-container-separation">
+          <ul class="means-of-contact-container__list">
+            <li class="means-of-contact__list-item">
+              <span class="means-of-contact__icon-container">
+                <i
+                  class="fa-regular fa-envelope fa-lg"
+                  style="color: #000000"
+                ></i>
+              </span>
+
+              <div class="means-of-contact__text-container">
+                <p class="means-of-contact__text">EMAIL</p>
+                <b
+                  class="means-of-contact__text--weight--bold means-of-contact__text--weight--bold"
+                  >meuemail@gmail.com</b
+                >
+              </div>
+            </li>
+
+            <li class="means-of-contact__list-item">
+              <span class="means-of-contact__icon-container">
+                <i
+                  class="fa-solid fa-phone fa-flip-horizontal fa-lg"
+                  style="color: #000000"
+                ></i>
+              </span>
+
+              <div class="means-of-contact__text-container">
+                <p class="means-of-contact__text">TELEFONE</p>
+                <b class="means-of-contact__text--weight--bold"
+                  >47 9 9999-9999</b
+                >
+              </div>
+            </li>
+
+            <li class="means-of-contact__list-item">
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5547992381783&text=Vasco da Gama"
+                class="means-of-contact__icon-container"
+              >
+                <i
+                  class="fa-brands fa-whatsapp fa-xl"
+                  style="color: #000000"
+                ></i>
+              </a>
+
+              <div class="means-of-contact__text-container">
+                <p class="means-of-contact__text">WHATSAPP</p>
+                <b class="means-of-contact__text--weight--bold"
+                  >47 9 9999-9999</b
+                >
+              </div>
+            </li>
+
+            <li class="means-of-contact__list-item">
+              <span class="means-of-contact__icon-container">
+                <i
+                  class="fa-brands fa-telegram fa-lg"
+                  style="color: #000000"
+                ></i>
+              </span>
+
+              <div class="means-of-contact__text-container">
+                <p class="means-of-contact__text">TELEGRAM</p>
+                <b class="means-of-contact__text--weight--bold"
+                  >47 9 9999-9999</b
+                >
+              </div>
+            </li>
+
+            <li class="means-of-contact__list-item">
+              <span class="means-of-contact__icon-container">
+                <i class="fa-brands fa-skype fa-xl" style="color: #000000"></i>
+              </span>
+
+              <div class="means-of-contact__text-container">
+                <p class="means-of-contact__text">SKYPE</p>
+                <b class="means-of-contact__text--weight--bold">meyskype</b>
+              </div>
+            </li>
+          </ul>
+
+          <footer>
+            <!--Lista com Semântica-->
+            <ul class="means-of-contact-container__social-medias-list">
+              <!--ListaItem com Semântica-->
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/guilherme-t-ba99a4205/"
+                  target="_blank"
+                  class="social-medias-list__icons-anchor social-medias-list__icons-anchor"
+                >
+                  <i
+                    class="fa-brands fa-linkedin-in social-medias-list__icons social-medias-list__icons"
+                  ></i>
+                </a>
+              </li>
+
+              <!--ListaItem com Semântica-->
+              <li>
+                <a
+                  href="https://twitter.com/GuiThomy"
+                  target="_blank"
+                  class="social-medias-list__icons-anchor"
+                >
+                  <i class="fa-brands fa-twitter social-medias-list__icons"></i>
+                </a>
+              </li>
+
+              <!--ListaItem com Semântica-->
+              <li>
+                <a
+                  href="https://www.instagram.com/guilherme_thomy/"
+                  target="_blank"
+                  class="social-medias-list__icons-anchor"
+                >
+                  <i
+                    class="fa-brands fa-instagram social-medias-list__icons"
+                  ></i>
+                </a>
+              </li>
+
+              <!--ListaItem com Semântica-->
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCvCYk3Nmhpn63gUvjlMywuQ"
+                  target="_blank"
+                  class="social-medias-list__icons-anchor"
+                >
+                  <i class="fa-brands fa-youtube social-medias-list__icons"></i>
+                </a>
+              </li>
+
+              <!--ListaItem com Semântica-->
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61550578348970"
+                  target="_blank"
+                  class="social-medias-list__icons-anchor"
+                >
+                  <i
+                    class="fa-brands fa-facebook social-medias-list__icons"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+
+        <form
+          action="https://formsubmit.co/guimasthomy@gmail.com"
+          method="POST"
+          class="means-of-contact__form"
+        >
+          <input
+            type="text"
+            name="name"
+            class="form__inputs"
+            placeholder="NOME"
+            required
+          />
+
+          <input
+            type="email"
+            name="email"
+            class="form__inputs"
+            placeholder="EMAIL"
+            required
+          />
+
+          <input
+            type="tel"
+            name="tel number"
+            class="form__inputs"
+            placeholder="TELEFONE"
+          />
+          <input
+            type="text"
+            name="assunto"
+            class="form__inputs"
+            placeholder="ASSUNTO"
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="6"
+            class="SendTextContainer__textArea form__textarea"
+            placeholder="MENSAGEM"
+          ></textarea>
+          <button type="submit" class="form__button">ENVIAR</button>
+
+          <input type="hidden" name="_subject" value="VASCO DA GAMA!!!" />
+          <input type="hidden" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#Contato">
+        </form>
+      </div>
+    </section>
+  </body>
+
+  <script src="./index.js"></script>
+  <script src="./Scripts/EducationScript.js"></script>
+  <script src="./Scripts/ExperienceScript.js"></script>
+  <script src="./Scripts/PortfolioScript.js"></script>
+  <script src="./Scripts/HomeScript.js"></script>
+  <script src="./Scripts/ContactScript.js"></script>
+</html>
