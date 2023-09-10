@@ -1,0 +1,234 @@
+.skills-section {
+  /* Display: */
+  display: flex;
+
+  /* Colors: */
+  background-color: #111111;
+
+  /* Size Settings: */
+  width: 100%;
+
+  /* Separation Settings: */
+  padding-left: 6vw;
+  padding-top: 7vh;
+  padding-right: 10vw;
+  padding-bottom: 13vh;
+
+  /* Display Settings: */
+  flex-direction: column;
+  row-gap: 10vh;
+}
+
+.skills-section__skills-container {
+  /* Display: */
+  display: grid;
+
+  /* Size Settings: */
+  width: 100%;
+
+  /* Display Settings: */
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas:
+    "SkillHTML SkillCSS SkillCSharp SkillJS SkillDotNet SkillTS SkillReact"
+    "SkillVsCode SkillGit SkillPostgreSQL SkillWebPack SkillNginx SkillUbuntu SkillAWS"
+    "SkillPhotoShop SkillFigma empty empty empty empty empty ";
+  row-gap: 5vh;
+  column-gap: 7vw;
+}
+
+.skills-container__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2vh;
+  width: 100%;
+}
+
+.skills-container__item:hover .skills-container__image{
+  filter: grayscale(0%);
+}
+
+.skills-container__item:hover .skills-container__stars-container{
+  filter: grayscale(0%);
+}
+
+.skills-container__item:hover .skills-container__text{
+  color: #f5b63f;
+}
+
+.skills-container__figure{
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  row-gap: 2vh;
+}
+
+.skills-container__text {
+  font-family: "Roboto";
+  color: white;
+  font-size: clamp(0.8rem, 1vw, 8rem);
+}
+
+.skills-container__image {
+  height: 10vh;
+  filter: grayscale(100%);
+}
+
+.skills-container__stars-container{
+  filter: grayscale(100%);
+}
+
+.skills-container__skill-html-container {
+  grid-area: SkillHTML;
+
+}
+
+.skills-container__skill-css-container {
+  grid-area: SkillCSS;
+}
+
+.skills-container__skill-csharp-container {
+  grid-area: SkillCSharp;
+}
+
+.skills-container__skill-js-container {
+  grid-area: SkillJS;
+}
+
+.skills-container__skill-dotnet-container {
+  grid-area: SkillDotNet;
+}
+
+.skills-container__skill-ts-container {
+  grid-area: SkillTS;
+}
+
+.skills-container__skill-react-container {
+  grid-area: SkillReact;
+}
+
+.skills-container__skill-vscode-container {
+  grid-area: SkillVsCode;
+}
+
+.skills-container__skill-git-container {
+  grid-area: SkillGit;
+}
+
+.skills-container__skill-postgresql-container {
+  grid-area: SkillPostgreSQL;
+}
+
+.skills-container__skill-webpack-container {
+  grid-area: SkillWebPack;
+}
+
+.skills-container__skill-nginx-container {
+  grid-area: SkillNginx;
+}
+
+.skills-container__skill-ubuntu-container {
+  grid-area: SkillUbuntu;
+}
+
+.skills-container__skill-aws-container {
+  grid-area: SkillAWS;
+}
+
+.skills-container__skill-photoshop-container {
+  grid-area: SkillPhotoShop;
+}
+
+.skills-container__skill-figma-container {
+  grid-area: SkillFigma;
+}
+
+@media(max-width: 1205px){
+  .skills-section__skills-container {
+    /* Display Settings: */
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+      "SkillHTML SkillCSS SkillCSharp SkillJS SkillDotNet SkillTS"
+      "SkillReact SkillVsCode SkillGit SkillPostgreSQL SkillWebPack SkillNginx"
+      "SkillUbuntu SkillAWS SkillPhotoShop SkillFigma empty empty";
+    row-gap: 5vh;
+    column-gap: 7vw;
+  }
+}
+
+@media(max-width: 950px){
+  .skills-section__skills-container {
+    /* Display Settings: */
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+      "SkillHTML SkillCSS SkillCSharp SkillJS SkillDotNet"
+      "SkillTS SkillReact SkillVsCode SkillGit SkillPostgreSQL"
+      "SkillWebPack SkillNginx SkillUbuntu SkillAWS SkillPhotoShop"
+      "SkillFigma empty empty empty empty" 
+    ;
+    row-gap: 5vh;
+    column-gap: 7vw;
+  }
+}
+
+@media(max-width: 700px){
+  .skills-section__skills-container {
+    /* Display Settings: */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+      "SkillHTML SkillCSS SkillCSharp SkillJS"
+      "SkillDotNet SkillTS SkillReact SkillVsCode"
+      "SkillGit SkillPostgreSQL SkillWebPack SkillNginx"
+      "SkillUbuntu SkillAWS SkillPhotoShop SkillFigma  " 
+    ;
+    row-gap: 5vh;
+    column-gap: 7vw;
+  }
+}
+
+@media(max-width: 490px){
+  .skills-section__skills-container {
+    /* Display Settings: */
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+      "SkillHTML SkillCSS SkillCSharp"
+      "SkillJS SkillDotNet SkillTS"
+      "SkillReact SkillVsCode SkillGit"
+      "SkillPostgreSQL SkillWebPack SkillNginx"
+      "SkillUbuntu SkillAWS SkillPhotoShop"
+      "SkillFigma empty empty"
+    ;
+    row-gap: 5vh;
+    column-gap: 7vw;
+  }
+}
+
+@media(max-width: 400px){
+  .skills-section {
+    padding-right: 10vw;
+  }
+
+  .skills-section__skills-container {
+    /* Display Settings: */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    grid-template-areas:
+      "SkillHTML SkillCSS"
+      "SkillCSharp SkillJS"
+      "SkillDotNet SkillTS"
+      "SkillReact SkillVsCode"
+      "SkillGit SkillPostgreSQL"
+      "SkillWebPack SkillNginx"
+      "SkillUbuntu SkillAWS"
+      "SkillPhotoShop SkillFigma"
+    ;
+    row-gap: 5vh;
+    column-gap: 7vw;
+  }
+}

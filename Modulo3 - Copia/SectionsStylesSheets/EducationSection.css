@@ -1,0 +1,102 @@
+.education-section{
+  display: flex;
+
+  background-color: #111111;
+
+  /* min-height: 100vh; */
+  width: 100%;
+
+  padding-top: 7vw;
+  padding-left: 5vw;
+  padding-right: 11vw;
+
+  flex-direction: column;
+  row-gap: 8vh;
+}
+
+.education-section__container{
+  display: flex;
+
+  flex-direction: column;
+
+  row-gap: 5vh;
+}
+
+.education-section__topics-container{
+  display: flex;
+
+  column-gap: 5vw;
+}
+
+.topics-container__topic-box{
+  display: flex;
+
+  width: 30%;
+
+  flex-direction: column;
+  row-gap: 4vw;
+}
+
+.topic-box__tittle-container{
+  background-color: #2A2A2A;
+  text-align: center;
+  padding: 0.5vw 0.2vw;
+  width: 100%;
+}
+
+.tittle-container__text{
+  color: #F5B63F;
+  font-family: 'Roboto';
+  font-size: 1vw;
+}
+
+.topic-box__list{
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
+.topic-box__list-item{
+  display: flex;
+
+  flex-direction: column;
+}
+
+.topic-box__text-container{
+  display: flex;
+
+  width: 100%;
+
+  flex-direction: column;
+}
+
+.topic-box__description-text-container{
+  display: flex;
+
+  width: 100%;
+}
+
+.topic-box__text{
+  color: white;
+
+  font-family: 'Roboto';
+  font-size: 1.8vw;
+}
+
+.topic-box__text--size--small{
+  color: white;
+
+  font-family: 'Roboto';
+  font-size: 1vw;
+}
+
+.education-section__button-container{
+  display: flex;
+
+  width: 100%;
+
+  justify-content: end;
+}
